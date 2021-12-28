@@ -21,12 +21,12 @@
 
     <main>
         <section>
-            <form action="?">
+            <form action="http://localhost:8080" method="POST">
                 <div class="container">
                     <!--Form envio de e-mail -->
                     <div class="mb-3">
                         <label for="assunto" class="form-label">Assunto:</label>
-                        <input type="email" class="form-control" id="assunto" required minlength="5" maxlength="50">
+                        <input type="text" class="form-control" id="assunto" name="assunto" required minlength="5" maxlength="50">
                         <div class="valid-feedback">
                             ✔
                         </div>
@@ -36,8 +36,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="mensagem" class="form-label">Mensagem:</label>
-                        <textarea class="form-control" id="mensagem" rows="3" placeholder="Escreva sua mensagem aqui"
-                            required minlength="10" maxlength="500"></textarea>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="3" placeholder="Escreva sua mensagem aqui"
+                            required minlength="10" maxlength="500" ></textarea>
                         <div class="valid-feedback">
                             ✔
                         </div>
