@@ -40,8 +40,6 @@ services:
     working_dir: /app
     #comando para executar a instalação do framework web e subir o serviço
     command: bash ./app.sh
-    ports: 
-      - 8080:8080
 
   #gerenciador web de banco de dados 
   #adminer:
